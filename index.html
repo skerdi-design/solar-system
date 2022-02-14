@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+<canvas class="canvas" width="1380" height="630"></canvas>
+
+<a onclick="opennav()" href="#" class="data load">Data</a>
+<a onclick="openoptions()" href="#" class="options load">Options</a>
+
+<div class="planets_container">
+  <a href="#sun" title="sun" class="info" title="sun">Sun</a>
+  <a href="#mercury" title="mercury" class="info" title="mercury">Mercury</a>
+  <a href="#venus" title="venus" class="info" title="venus">Venus</a>
+  <a href="#earth" title="earth" class="info active" title="earth">Earth</a>
+  <a href="#mars" title="mars" class="info" title="mars">Mars</a>
+  <a href="#jupiter" title="jupiter" class="info" title="jupiter">Jupiter</a>
+  <a href="#saturn" title="saturn" class="info" title="saturn">Saturn</a>
+  <a href="#uranus" title="uranus" class="info" title="uranus">Uranus</a>
+  <a href="#neptune" title="neptune" class="info" title="neptune">Neptune</a>
+</div>
+<div class="options_container">
+  <div class="container">
+    <input type="checkbox" id="3D">
+    <label onclick="toggle()" class="label" for="3D"></label>
+    <span id="tog">3D</span>
+  </div>
+  <div class="container">
+    <input type="checkbox" id="flat">
+    <label onclick="flat()" for="flat" class="label"></label>
+    <span id="togl">＋</span>
+    <!--&#xff0b   &#65293-->
+  </div>
+  <div class="container">
+    <input type="radio" name="scale" id="speed" checked>
+    <label for="speed" class="scale"></label>
+  </div>
+  <div class="container">
+    <input type="radio" name="scale" id="size">
+    <label for="size" class="scale"></label>
+  </div>
+  <div class="container">
+    <input type="radio" name="scale" id="distance">
+    <label for="distance" class="scale"></label>
+  </div>
+</div>
+
+<div class="univers">
+  <div class="solar flat speed">
+    <div class="sun">
+      <div class="infos">
+        <span></span>
+        <p></p>
+      </div>
+    </div>
+    <div class="mercury">
+      <div class="pos">
+        <div class="planet">
+          <div class="infos">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="venus">
+      <div class="pos">
+        <div class="planet">
+          <div class="infos">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="earth">
+      <div class="pos">
+        <div class="orbit">
+          <div class="pos">
+            <div class="moon"></div>
+          </div>
+        </div>
+        <div class="planet">
+          <div class="infos">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mars">
+      <div class="pos">
+        <div class="planet">
+          <div class="infos">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jupiter">
+      <div class="pos">
+        <div class="planet">
+          <div class="infos">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="saturn">
+      <div class="pos">
+        <div class="planet">
+          <div class="ring"></div>
+          <div class="infos">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uranus">
+      <div class="pos">
+        <div class="planet">
+          <div class="infos">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="neptune">
+      <div class="pos">
+        <div class="planet">
+          <div class="infos">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
